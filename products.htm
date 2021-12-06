@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+</head>
+<body style="background-image: linear-gradient(to bottom, rgb(31, 39, 32), rgb(27, 20, 20), rgb(45, 46, 2), black);">
+    <div id="companylogo">
+        <div id="head">
+        <img id="companylogoo" src="/images/logo (2).png" alt="">
+        <h1>Happy<span>Nest</span></h1>
+        </div>
+        <nav> 
+            <ul id="navbarli">
+            <li><a class="nav-link" href="home.htm">HOME <i class="fas fa-home"></i></a></li>
+            
+            <li><a class="nav-link" href="home.htm">ABOUT <i class="far fa-address-card"></i></a></li>
+            
+            <li><a class="nav-link" href="products.htm">PRODUCTS <i class="fas fa-cannabis"></i></a></li>
+            
+            <li id="navcontact"><a class="nav-link" href="#contact">CONTACT US <i class="far fa-envelope"></i></a></li>
+            
+            </ul>   
+        </nav>
+
+        <div id="rightnav"><a class="nav-link" href="#loginn">LOGIN/SIGNUP <i class="fas fa-user"></i></a></div>
+        
+<!-- ------------------------------------------checkout------------------------------------------------   -->
+    </div>
+    <div id="checkoutpage">
+        <i class="fa fa-long-arrow-left" id="longarrowcheckout" aria-hidden="true"></i>
+        <div id="headercheckoutpage" class="container-flex">
+            <h1>Happy<span>Nest</span></h1>
+            <h3>Hello User</h3>
+        </div>
+
+    <div id="containersc">
+        <div id="ShoppingCart">
+            <h3>ShoppingCart</h3>
+                <div id="shoppingitem">
+
+                </div>
+                <br>
+                <div id="shoppinggttl">
+
+                </div>
+        </div>
+
+        <div id="PaymentInfo">
+            <h1>PaymentInfo</h1>
+            <label for="payment">Payment Method</label>
+            <div class="container-flex">
+            <p id="cc" onclick="ccclicked(this)">Credit Card</p>
+            <p id="pp" onclick="ppclicked(this)">PayPal</p>
+             </div>
+            <div id="ccinfo"><!--for credit card-->
+            <label for="payment">Name On Card</label>
+            <input type="text" id="nameoncard">
+            <br>
+            <label for="ccn">Credit Card Number:</label>
+            <input id="ccn" type="tel" inputmode="numeric" pattern="\d*" onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)" maxlength="19" placeholder="Card Number">
+            <br>
+            <div class="container-flex">
+                <div>
+                    <label for="expdate">Expiration Date:</label>
+                    <select name="month" id="month" placeholder="MM">
+                        <option value="MM" selected disabled>MM</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <input type="number" min="2021" max="2050" maxlength="4" placeholder="YYYY">
+                </div>
+                <div>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" onkeypress="return onlyNumbers(event)" onkeyup="return numberValidation(event)">
+                </div>
+            </div>
+            <br>
+            <button id="payfinal">Proceed</button>
+            </div><!--for creditcard-->
+
+            <div id="paypal"><!--for paypal-->
+                <label for="emailpaypal">Email:</label>
+                <input type="email" name="emailpaypal" id="emailpaypal">
+                <br>
+                <label for="pswdpaypal">Password:</label>
+                <input type="password" name="emailpaypal" id="pswdpaypal">
+            <br>
+                <button id="payfinal">Proceed</button>
+            </div>
+
+           
+
+       </div><!--Payment info-->
+    </div> <!--maindiv without header-->
+</div><!--maindiv-->
+
+<div id="postpayment">
+    
+    <div id="postpaymentcontent">
+        <h1>Thank you for Purchasing our products.</h1>
+        <p>We have sent you a copy of the receipt to your email along with your tracking ID.</p>
+        <button id="ppmtback" onclick="backremove(this)">Back</button>
+    </div>
+</div>
+
+
+
+
+<!-- ------------------------------------------------------product------------------------------------------------------------ -->
+
+
+    <div class="products-detail" id="products-detail">
+
+        <a href="#Sativa">
+        <div id="card-1">
+           <h2>SATIVA</h2>
+             <h3>Skinny, light green leaves, tall, slim plant.</h3>
+                <p>Effects are simulating and suitable for day time use.</p>
+                
+                    <li>BOOSTS ENERGY</li>
+                    <li>EASES DEPRESSION</li>
+                    <li>INCREASES FOCUS</li>
+                
+            </div>
+            </a>
+
+        <a href="#Indica">
+            <div id="card-2">
+            <h2>INDICA</h2>
+            <h3>Short, bushyplants, broad, dark green leaves</h3>
+                <p>Effects are relaxing and suitable for night time use.</p>
+                
+                    <li>SEDATIVE PROPERTY</li>
+                    <li>RELIEVES PAIN</li>
+                    <li>STILMULATES APPETITE</li>
+                
+            </div>
+            </a>
+        <a href="#Hybrid"><div id="card-3">
+            <h2>HYBRID</h2>
+            <h3>lab tested mix of SATIVA & INDICA</h3>
+            <p>Effects are balanced between energizing and calming</p>
+        </div></a>
+    </div>
+    <!-- ----------------------------------------------Check out--------------------------------------------- -->
+    <i class="fas fa-shopping-cart" id="basket"></i>
+    <i class="fa fa-caret-right" aria-hidden="true" id="backbasket"></i>
+    <div class="wrapperbasket" id="bskwrapper">
+        
+        <div class="basketcontent" id="basketcontent">
+            <h3>Items in Basket</h3>
+        <div id="items">
+            
+        </div>
+       
+    </div>
+    <div id="grand-total">
+        <h3>Grand Total</h3>
+        <h4 id="gttl">USD 0.00</h4>
+       
+    </div>
+    <button id="checkout-btn">Checkout</button>
+        
+            <div id="login">
+               
+                <div id="displayamountchkout">
+                <h2>Total Amount: <h2 id='ttlamountchkout'></h2></h2></div>
+               
+            
+                <div id="login-card">
+                   
+                  <!-- <div id="emaildivcheckout"> 
+                    <label for="ID">Email:</label>
+                    <input type="email" name="login-email" id="LGEmail" required><br>
+                    <label for="Password">Password:</label>
+                    <input type="password" name="login-password" id="LGPW" required><br>
+                </div> -->
+                <div id="buttonscheckout">
+                    <a href="#contact"  id="logintopay"><button >LOGIN TO PAY</button></a>
+                   <br>
+                    <a href="#contact" id="registerfirst"><button >REGISTER FIRST</button></a>
+                </div>
+                <br>
+                <button id="checkoutana" type="submit">Checkout Anonyomnusly</button>
+                
+            </div>
+            <i class="fa fa-arrow-left" id="backbsk" aria-hidden="true">Add more item</i>
+            </div>
+    </div>
+    <!-- -------------------------------------------SATIVA---------------------------------------- -->
+
+    <div id="products">
+
+        <div id="Sativa">
+            <div  class="product-name" ><h1 class="word">SATIVA</h1></div>
+        <div  class="product-flex">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <div id="SA-AK" class="flip-card-front" id="front"><div  class="wordcard"><h3>SOUR DIESEL</h3>
+                    </div></div>
+                    
+                    <div class="flip-card-back" id="fcbh1" onmouseover="hover(this)">
+                                  
+                            <h3>SOUR DIESEL</h3>
+                            <input type="radio" value='17' name="AK" id="FO10g1">
+                            <label for="AK10g">10g @ USD17.00</label><br>
+                            <input type="radio" value='160' name="AK" id="FO100g1">
+                            <label for="AK100g">100g @ USD160.00</label><br>
+                            <input type="radio" value='0' name="AK" id="customFO1">
+                            <label for="customAK">custom amount:</label>
+                            <input type="number" name="AK" id="amountFO1" max="1000">
+                            <br>
+                            <input type="button" class="ADKbtn" value="Add to cart"> 
+                          
+                    </div>   
+                </div>
+            </div>
+        
+            <div class="flip-card">
+                <div class="flip-card-inner">    
+        <div id="SA-BK" class="flip-card-front"><div class="wordcard"></div><h3>JACK HERER</h3></div>
+
+            <div  class="flip-card-back" id="fcbh2" onmouseover="hover(this)">         
+            <h3>JACK HERER</h3>
+                    <input type="radio" value='16' name="BK" id="FO10g2">
+                    <label for="BK10g">10g @ USD16.00</label><br>
+                    <input type="radio" value='150.50' name="BK" id="FO100g2">
+                    <label for="BK100g">100g @ USD150.50</label><br>
+                    <input type="radio" value='1' name="BK" id="customFO2">
+                    <label for="customBK">custom amount:</label><br>
+                    <input type="number" name="BK" id="amountFO2" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+        <div id="SA-BA" class="flip-card-front"><div class="wordcard"></div><h3>CRITICAL CHEESE</h3></div>
+            <div  class="flip-card-back" id="fcbh3" onmouseover="hover(this)">
+            <h3>CRITICAL CHEESE</h3>
+                    <input type="radio" value='15.50' name="BA" id="FO10g3">
+                    <label for="BA10g">10g @ USD15.50</label><br>
+                    <input type="radio" value='140.50' name="BA" id="FO100g3">
+                    <label for="BA100g">100g @ USD140.50</label><br>
+                    <input type="radio" value='1' name="BA" id="customFO3">
+                    <label for="customBA">custom amount:</label><br>
+                    <input type="number" name="BA" id="amountFO3" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+        <div id="SA-GC" class="flip-card-front"><div class="wordcard"></div><h3>GREEN CRACK</h3></div>
+            <div  class="flip-card-back" id="fcbh4" onmouseover="hover(this)">
+            <h3>GREEN CRACK</h3>
+                    <input type="radio" value='15.50' name="BA" id="FO10g4">
+                    <label for="BA10g">10g @ USD15.50</label><br>
+                    <input type="radio" value='140.50' name="BA" id="FO100g4">
+                    <label for="BA100g">100g @ USD140.50</label><br>
+                    <input type="radio" value='1' name="BA" id="customFO4">
+                    <label for="customBA">custom amount:</label><br>
+                    <input type="number" name="BA" id="amountFO4" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+        <div id="SA-DP" class="flip-card-front"><div class="wordcard"></div><h3>DURBAN POISON</h3></div>
+            <div  class="flip-card-back" id="fcbh5" onmouseover="hover(this)">
+            <h3>DURBAN POISON</h3>
+                    <input type="radio" value='18.50' name="BA" id="FO10g5">
+                    <label for="BA10g">10g @ USD18.50</label><br>
+                    <input type="radio" value='170.50' name="BA" id="FO100g5">
+                    <label for="BA100g">100g @ USD170.50</label><br>
+                    <input type="radio" value='1' name="BA" id="customFO5">
+                    <label for="customBA">custom amount:</label><br>
+                    <input type="number" name="BA" id="amountFO5" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+        <div id="SA-SSH" class="flip-card-front"><div class="wordcard"></div><h3>SUPER SILVER HAZE</h3></div>
+            <div  class="flip-card-back" id="fcbh6" onmouseover="hover(this)">
+            <h3>SUPER SILVER HAZE</h3>
+                    <input type="radio" value='15' name="BA" id="FO10g6">
+                    <label for="BA10g">10g @ USD15.00</label><br>
+                    <input type="radio" value='140' name="BA" id="FO100g6">
+                    <label for="BA100g">100g @ USD140.00</label><br>
+                    <input type="radio" value='1' name="BA" id="customFO6">
+                    <label for="customBA">custom amount:</label><br>
+                    <input type="number" name="BA" id="amountFO6" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+        <div id="SA-TN" class="flip-card-front"><div class="wordcard"></div><h3>TANGIE</h3></div>            
+            <div  class="flip-card-back" id="fcbh7" onmouseover="hover(this)">
+            <h3>TANGIE</h3>
+                    <input type="radio" value='16' name="BA" id="FO10g7">
+                    <label for="FO10g">10g @ USD16.00</label><br>
+                    <input type="radio" value='150' name="BA" id="FO100g7">
+                    <label for="FO100g">100g @ USD150.00</label><br>
+                    <input type="radio" value='1' name="BA" id="customFO7">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="BA" id="amountFO7" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+        <div id="SA-BL" class="flip-card-front"><div class="wordcard"></div><h3>BLUEDREAM</h3></div>
+            <div  class="flip-card-back" id="fcbh8" onmouseover="hover(this)">
+            <h3>BLUEDREAM</h3>
+                    <input type="radio" value='17.50' name="BA" id="FO10g8">
+                    <label for="FO10g">10g @ USD17.50</label><br>
+                    <input type="radio" value='160.50' name="BA" id="FO100g8">
+                    <label for="FO100g">100g @ USD160.50</label><br>
+                    <input type="radio" value='1' name="BA" id="customFO8">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="BA" id="amountFO8" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+        <div id="SA-TW" class="flip-card-front"><h3>TRAINWRECK</h3></div>
+            <div  class="flip-card-back" id="fcbh9" onmouseover="hover(this)">
+            <h3>TRAINWRECK</h3>
+                    <input type="radio" value='15.50' name="BA" id="FO10g9">
+                    <label for="FO10g">10g @ USD15.50</label><br>
+                    <input type="radio" value='140.50' name="BA" id="FO100g9">
+                    <label for="FO100g">100g @ USD140.50</label><br>
+                    <input type="radio" value='1' name="BA" id="customFO9">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="BA" id="amountFO9" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+
+
+        <!-- -------------------------------------INDICA------------------------------- -->
+        <div id="Indica">
+
+            <div  class="product-name"><h1  class="word">INDICA</h1></div>
+            <div  class="product-flex">
+
+            
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-HQ" class="flip-card-front"><h3>HARLEYQUIIN</h3></div>
+            
+            <div class="flip-card-back" id="fcbh10" onmouseover="hover(this)">
+                <h3>HARLEYQUIIN</h3>
+                <input type="radio" value='5.50' name="HQ" id="FO10g10">
+                    <label for="FO10g">10g @ USD5.50</label><br>
+                    <input type="radio" value='45.50' name="HQ" id="FO100g10">
+                    <label for="FO100g">100g @ USD45.50</label><br>
+                    <input type="radio" value='1' name="HQ" id="customFO10">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="HQ" id="amountFO10" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+
+            </div>
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-SC" class="flip-card-front"><h3>STRAWBERRY COUGH</h3></div>
+            
+            <div class="flip-card-back" id="fcbh11" onmouseover="hover(this)">
+                <h3>STRAWBERRY COUGH</h3>
+                <input type="radio" value='15.50' name="SC" id="FO10g11">
+                    <label for="SC10g">10g @ USD15.50</label><br>
+                    <input type="radio" value='140.50' name="SC" id="FO100g11">
+                    <label for="SC100g">100g @ USD140.50</label><br>
+                    <input type="radio" value='1' name="SC" id="customFO11">
+                    <label for="customSC">custom amount:</label><br>
+                    <input type="number" name="SC" id="amountFO11" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>   
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-AK" class="flip-card-front"><h3>AFGAN KUSH</h3></div>
+            
+            <div class="flip-card-back" id="fcbh12" onmouseover="hover(this)">
+                <h3>AFGAN KUSH</h3>
+                <input type="radio" value='16.50' name="SD" id="FO10g12">
+                    <label for="FO10g">10g @ USD16.50</label><br>
+                    <input type="radio" value='150.50' name="SD" id="FO100g12">
+                    <label for="FO100g">100g @ USD150.50</label><br>
+                    <input type="radio" value='1' name="SD" id="customFO12">
+                    <label for="customSD">custom amount:</label><br>
+                    <input type="number" name="SD" id="amountFO12" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>    
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-BK" class="flip-card-front"><h3>BLACKBERRY KUSH</h3></div>
+            
+            <div class="flip-card-back" id="fcbh13" onmouseover="hover(this)">
+                <h3>BLACKBERRY KUSH</h3>
+                <input type="radio" value='13.50' name="HQ" id="FO10g13">
+                    <label for="FO10g">10g @ USD13.50</label><br>
+                    <input type="radio" value='140.50' name="HQ" id="FO100g13">
+                    <label for="FO100g">100g @ USD140.50</label><br>
+                    <input type="radio" value='1' name="HQ" id="customFO13">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="HQ" id="amountFO13" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>    
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-BA" class="flip-card-front"><h3>BUBBA KUSH</h3></div>
+            
+            <div class="flip-card-back" id="fcbh14" onmouseover="hover(this)">
+                <h3>BUBBA KUSH</h3>
+                <input type="radio" value='15.50' name="FO" id="FO10g14">
+                    <label for="FO10g">10g @ USD15.50</label><br>
+                    <input type="radio" value='140.50' name="FO" id="FO100g14">
+                    <label for="FO100g">100g @ USD140.50</label><br>
+                    <input type="radio" value='1' name="FO" id="customFO14">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="FO" id="amountFO14" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>    
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-GF" class="flip-card-front"> <h3>GODFATHER OG</h3></div>
+            
+            <div class="flip-card-back" id="fcbh15" onmouseover="hover(this)">
+                <h3>GODFATHER OG</h3>
+                <input type="radio" value='16.50' name="SD" id="FO10g15">
+                    <label for="FO10g">10g @ USD16.50</label><br>
+                    <input type="radio" value='150.50' name="SD" id="FO100g15">
+                    <label for="FO100g">100g @ USD150.50</label><br>
+                    <input type="radio" value='1' name="SD" id="customFO15">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="SD" id="amountFO15" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>   
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-ER" class="flip-card-front"><h3>ELEVEN ROSES</h3></div>
+            
+            <div class="flip-card-back" id="fcbh16" onmouseover="hover(this)">
+                <h3>ELEVEN ROSES</h3>
+                <input type="radio" value='14.50' name="HQ" id="FO10g16">
+                    <label for="FO10g">10g @ USD14.50</label><br>
+                    <input type="radio" value='130.50' name="HQ" id="FO100g16">
+                    <label for="FO100g">100g @ USD130.50</label><br>
+                    <input type="radio" value='1' name="HQ" id="customFO16">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="HQ" id="amountFO16" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>    
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-SW" class="flip-card-front"><h3>SKYWALKER OG</h3></div>
+            
+            <div class="flip-card-back" id="fcbh17" onmouseover="hover(this)">
+                <h3>SKYWALKER OG</h3>
+                <input type="radio" value='18.50' name="FO" id="FO10g17">
+                    <label for="FO10g">10g @ USD18.50</label><br>
+                    <input type="radio" value='170.50' name="FO" id="FO100g17">
+                    <label for="FO100g">100g @ USD170.50</label><br>
+                    <input type="radio" value='1' name="FO" id="customFO17">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="FO" id="amountFO17" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>    
+        </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div id="IN-NL" class="flip-card-front"><h3>NORTHEN LIGHT</h3></div>
+            
+            <div class="flip-card-back" id="fcbh18" onmouseover="hover(this)">
+                <h3>NORTHEN LIGHT</h3>
+                <input type="radio" value='16.50' name="SD" id="FO10g18">
+                    <label for="FO10g">10g @ USD16.50</label><br>
+                    <input type="radio" value='150.50' name="SD" id="FO100g18">
+                    <label for="FO100g">100g @ USD150.50</label><br>
+                    <input type="radio" value='1' name="SD" id="customFO18">
+                    <label for="customFO">custom amount:</label><br>
+                    <input type="number" name="SD" id="amountFO18" max="1000">
+                    <br>
+                    <input type="button" class="ADKbtn" value="Add to cart">
+            </div>
+        </div>
+        </div>
+            </div>
+        </div>
+
+    <!-- ---------------------------------------------HYBRID-------------------------------------------------------- -->
+        <div id="Hybrid">
+
+            <div  class="product-name"><h1 class="word">HYBRID</h1></div>
+            <div  class="product-flex">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-AK" class="flip-card-front" ><h3>AK 47</h3></div>
+
+                        <div class="flip-card-back" id="fcbh19" onmouseover="hover(this)">
+                            <h3>AK 47</h3>
+                            <input type="radio" value='17.00' name="FO" id="FO10g19">
+                                <label for="FO10g">10g @ USD17.00</label><br>
+                                <input type="radio" value='160.00' name="FO" id="FO100g19">
+                                <label for="FO100g">100g @ USD160.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO19">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO19" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-CD" class="flip-card-front" ><h3>CHEMDAWG</h3></div>
+
+                        <div class="flip-card-back" id="fcbh20" onmouseover="hover(this)">
+                            <h3>CHEMDAWG</h3>
+                            <input type="radio" value='18.00' name="FO" id="FO10g20">
+                                <label for="FO10g">10g @ USD18.00</label><br>
+                                <input type="radio" value='170.00' name="FO" id="FO100g20">
+                                <label for="FO100g">100g @ USD170.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO20">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO20" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-LC" class="flip-card-front"><h3>LA CONFIDENTIAL</h3></div>
+
+                        <div class="flip-card-back" id="fcbh21" onmouseover="hover(this)">
+                            <h3>LA CONFIDENTIAL</h3>
+                            <input type="radio" value='17' name="FO" id="FO10g21">
+                                <label for="FO10g">10g @ USD17.00</label><br>
+                                <input type="radio" value='160' name="FO" id="FO100g21">
+                                <label for="FO100g">100g @ USD160.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO21">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO21" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-SP" class="flip-card-front"><h3>SOUR SPACE CANDY</h3></div>
+
+                        <div class="flip-card-back" id="fcbh22" onmouseover="hover(this)">
+                            <h3>SOUR SPACE CANDY</h3>
+                            <input type="radio" value='22' name="FO" id="FO10g22">
+                                <label for="FO10g">10g @ USD22.00</label><br>
+                                <input type="radio" value='210' name="FO" id="FO100g22">
+                                <label for="FO100g">100g @ USD210.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO22">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO22" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-BW" class="flip-card-front"><h3>BLISSFUL WIZZARD</h3></div>
+
+                        <div class="flip-card-back" id="fcbh23" onmouseover="hover(this)">
+                            <h3>BLISSFUL WIZZARD</h3>
+                            <input type="radio" value='19' name="FO" id="FO10g23">
+                                <label for="FO10g">10g @ USD19.00</label><br>
+                                <input type="radio" value='180' name="FO" id="FO100g23">
+                                <label for="FO100g">100g @ USD180.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO23">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO23" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-BB" class="flip-card-front"><h3>BRUCE BANNER</h3></div>
+
+                        <div class="flip-card-back" id="fcbh24" onmouseover="hover(this)">
+                            <h3>BRUCE BANNER</h3>
+                            <input type="radio" value='18' name="FO" id="FO10g24">
+                                <label for="FO10g">10g @ USD18.00</label><br>
+                                <input type="radio" value='170' name="FO" id="FO100g24">
+                                <label for="FO100g">100g @ USD170.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO24">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO24" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-GS" class="flip-card-front"><h3>GIRL SCOUT COOKIE</h3></div>
+
+                        <div class="flip-card-back" id="fcbh25" onmouseover="hover(this)">
+                            <h3>GIRL SCOUT COOKIE</h3>
+                            <input type="radio" value='21' name="FO" id="FO10g25">
+                                <label for="FO10g">10g @ USD21.00</label><br>
+                                <input type="radio" value='200' name="FO" id="FO100g25">
+                                <label for="FO100g">100g @ USD200.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO25">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO25" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-KT" class="flip-card-front"><h3>KING TUT</h3></div>
+
+                        <div class="flip-card-back" id="fcbh26" onmouseover="hover(this)">
+                            <h3>KING TUT</h3>
+                            <input type="radio" value='17' name="FO" id="FO10g26">
+                                <label for="FO10g">10g @ USD17.00</label><br>
+                                <input type="radio" value='160' name="FO" id="FO100g26">
+                                <label for="FO100g">100g @ USD160.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO26">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO26" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="HY-GG" class="flip-card-front"><h3>GORILLA GLUE</h3></div>
+
+                        <div class="flip-card-back" id="fcbh27" onmouseover="hover(this)">
+                            <h3>GORILLA GLUE</h3>
+                            <input type="radio" value='18' name="FO" id="FO10g27">
+                                <label for="FO10g">10g @ USD18.00</label><br>
+                                <input type="radio" value='170' name="FO" id="FO100g27">
+                                <label for="FO100g">100g @ USD170.00</label><br>
+                                <input type="radio" value='1' name="FO" id="customFO27">
+                                <label for="customFO">custom amount:</label><br>
+                                <input type="number" name="FO" id="amountFO27" max="1000">
+                                <br>
+                                <input type="button" class="ADKbtn" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+    <!-- ----------------------------------------------------------contact us----------------------------------------------------- -->
+        <div id="cover"><h1>CONTACT US</h1>
+            <div id="frontpagect">
+                
+                <select name="contact" id="contactdropdown">
+                <option value='option' selected disabled> -- select an option -- </option>
+                <option class="coverop" value="svcfeedback" >Service Feedback/Complaint</option>
+                <option class="coverop" value="prdfeedback">Product Feedback/Complaint</option>
+                <option class="coverop" value="track">Track my order</option>
+                <option class="coverop" value="others">Others</option>
+            </select>
+            <br><br>
+            <button id="optionbtn" onclick="move()">Le go!</button>
+        </div>
+        </div>
+            <div id="contact">
+            <div id="linkct">
+                <ul>
+                    <!-- onmouseover= hoverlk(this) -->
+                    <!-- onmouseover= hoverlk(this)
+                    onmouseover= hoverlk(this)
+                    onmouseover= hoverlk(this) -->
+                    <!-- <div id="highlight"></div> -->
+                    
+                    <li id="lk1"><h3 id="LK1" >Service Feedback<h3></li>
+                    <li id="lk2"><h3 id="LK2" >Product Feedback<h3></li>
+                    <li id="lk3"><h3 id="LK3" >Track Order<h3></li>
+                    <li id="lk4"><h3 id="LK4" >Others<h3></li>
+                </ul>
+            </div>
+            <div id="viewportct">
+          
+            
+            <div id="csvfb">
+        
+                    <!-- <label for="service-feedback">Service Feedback</label> -->
+                    <select name="feedback-type" id="customer-feedback">
+                        <option value="service-improvement">Service Improvement</option>
+                        <option value="service-Faluty">Service Faulty</option>
+                        <option value="personnel">Personnel</option>
+                        <option value="others">Others</option>
+                    </select><br>
+                    <textarea name="svcfb" id="svcfb" cols="90" rows="15"></textarea><br>
+                    <input type="email" name="contactemail" id="email" placeholder="E-mail" required><br>
+                    <button class="submitctus" onclick="submitctus(this)">Submit</button>
+                
+            </div>
+            <div id="pdfb">
+                
+                
+                    <!-- <label for="product-feedback">Product Feedback</label> -->
+                    <select name="feedback-type" id="product-feedback">
+                        <option value="Product-improvement">Product Improvement</option>
+                        <option value="Product-Faluty">Product Faulty</option>
+                        <option value="Product-suggestion">Product Suggestion</option>
+                        <option value="others">Others</option>
+                    </select><br>
+                    <textarea name="prdfb" id="svcfb" cols="90" rows="15"></textarea><br>
+                    <input type="email" name="contactemail" id="email" placeholder="E-mail" required><br>
+                    <button class="submitctus" onclick="submitctus(this)">Submit</button>
+                
+            </div>
+            <div id="tracker-div">
+    
+                
+                    <label for="track">Tracker ID:</label>
+                    <input type="text" name="trackid" id="trackid"><br>
+                    <button type="submit" id="trackbtn">Track</button>
+                    <br>
+                    <button type="submit" id="forgettrackerbtn">Forgot Tracker ID</button><br>
+               
+            </div>
+    
+            <div id="others">
+    
+                    <label for="others">Others:</label><br>
+                    <textarea name="others" id="" cols="90" rows="15"></textarea><br>
+                    <label for="emailsubmit">Email:</label>
+                    <input type="email" name="contactemail" id="email" placeholder="E-mail" required><br>
+                    <button class="submitctus" onclick="submitctus(this)">Submit</button>
+                
+            </div>      
+        </div>
+        <div id="replyctus">
+            <h2>Your Feedback is being sent!</h2>
+            <p>we will get back to your Email within 2 to 3 business days.</p>
+            <p>Thank you for your feedback!</p>
+            <button id="backtocover" onclick="zindexmove()">Back to Contact us</button>
+        </div>
+        <div id="register">
+            <div id="left-register">
+               
+                <h1>Register New Account</h1>
+                <label for="emailregister">First Name:</label>
+                <input type="text" name="emailregister" id="fname">
+                <br>
+                <label for="emailregister">Last Name:</label>
+                <input type="text" name="emailregister" id="lname">
+                <br>
+            <label for="emailregister">Email:</label>
+            <input type="email" name="emailregister" id="emailregister">
+            <br>
+            <label for="emailregister">Password:</label>
+            <input type="password" name="emailregister" id="passwordregister">
+            <br>
+            <label for="emailregister">Repeat Password:</label>
+            <input type="password" name="emailregister" id="passwordregister">
+            <br>
+            <label for="emailregister">Date of Birth:</label>
+            <input type="month" name="emailregister" id="MOB">
+            <br>
+            <div>
+            <label for="mf">Male</label>
+            <input type="radio" name="emailregister" id="male">
+        <br>
+            <label for="mf">Female</label>
+            <input type="radio" name="emailregister" id="female">
+        </div>
+
+        
+            </div>
+            <div id="right-register">
+                <img src="/images/borat.png" alt="borat">
+                <br>
+                <label for="verification">Type in what it says in the image for verification:</label>
+                <input type="text" name="emailregister" id="verification">
+                <br>
+                <button id="registered">Submit</button>
+            </div>
+        </div>
+        <div id="loginn">
+            <div id="wrapperlogin">
+            <label for="emaillogin">Email:</label>
+            <br>
+            <input type="email">
+            <br>
+            <label for="passwordlogin">Password:</label>
+            <br>
+            <input type="password">
+            <br>
+            <br>
+            <button id="loginenter">LOGIN</button>
+            <div>
+            <label for="rememberme">Remember me</label>
+        
+            <input type="checkbox" name="rememberme" id="rememberme">
+        </div>
+            <p id="forgetpass">Forget Password?</p>
+            <br>
+            <p id="registerinloginpage">Register</p>
+        </div>
+        </div>
+        
+    <div id="trackproduct">    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.0448315003955!2d-122.41394978419606!3d37.765546979761105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e2fe688d323%3A0x5f7e655e43ba6797!2s16th%20St%2C%20San%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2smm!4v1638351012098!5m2!1sen!2smm" id="iframeggmap" allowfullscreen="" loading="lazy"></iframe>      
+        <div id="trackproductcontent">
+            <p>your product will arrive in <span>1h 20 min</span></p>
+            <p>Our delivery personnel will contact you when he arrive. Stay by your phone. Thanks</p>
+            <button  onclick="backremove(this)">Back</button>
+    </div>
+    </div>
+         
+    <div id="forgettrackeriddiv"> 
+        <h3>Forget password or tracker ID?</h3> 
+        <p>we will send it to your email</p>  
+        <label for="forgettrackerid">Email</label>   
+        <input type="email" name="forgettrackerid" id="forgettrackerid">  
+            <div id="trackproductcontent">
+            <button onclick="backremove(this)">Submit</button>
+            </div>
+    </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+        <div id="shortabout">
+            <h2>OUR TEAM INTRO</h2>
+            <p>WE GOT:</p>
+                <p>our bois on Distribution</p>
+                <p>Marketing team</p>
+                <p>R&D</p>
+                <p>Finance</p>
+                <p>Management</p>
+            
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <p><i class="fa fa-home" aria-hidden="true"></i> CALIFONIA</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> info@happynest.com</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +01 45877485-7</p>
+        </div>
+        <div>
+            <h2>Social Media Links</h2>
+            <ul>
+                <li><i class="fab fa-facebook-square"></i> FB</li>
+                <li><i class="fab fa-twitter-square"></i> twitter</li>
+                <li><i class="fab fa-instagram"></i> insta</li>
+                <li><i class="fab fa-reddit-square"></i> reddit</li>
+            </ul>
+        </div>
+    </div>
+        <div id="copyright"><p> Copyright HappyNest 2021. All rights reserved</p></div>
+    </footer>
+</body>
+<script src="products.js"></script>
+
+</html>
