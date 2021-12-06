@@ -402,11 +402,11 @@ registered.addEventListener('click', function(){
     var mfavatar;
 
     if(maleregister.checked){
-        mfavatar = '/images/maleregister.jpg';
+        mfavatar = 'images/maleregister.jpg';
     }else if(femaleregister.checked){
-        mfavatar = '/images/femaleregister1.jpg';
+        mfavatar = 'images/femaleregister1.jpg';
     }else{
-        mfavatar = '/images/maleregister.jpg'
+        mfavatar = 'images/maleregister.jpg'
     }
     
     var fname = document.getElementById('fname').value;

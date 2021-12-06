@@ -11,7 +11,7 @@
         overflow-x: hidden;
        
         background-image: linear-gradient(to bottom, rgb(31, 39, 32), rgb(27, 20, 20), rgb(45, 46, 2), black);
-        /* background: url('/images/promo1dec.jpg') fixed center no-repeat;
+        /* background: url('images/promo1dec.jpg') fixed center no-repeat;
         background-size: auto; */
         scroll-behavior: smooth;
         font-family: 'Josefin Sans', sans-serif;
@@ -31,7 +31,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background: url(/images/promo1dec.jpg) no-repeat center;
+        background: url(images/promo1dec.jpg) no-repeat center;
         background-size: cover;
         z-index: 100;
     }
@@ -96,7 +96,7 @@
         left: 0;
         padding: 0;
         margin: 0;
-        /* background:url(/images/LOGO\ BG.jfif) no-repeat center; */
+        /* background:url(images/LOGO\ BG.jfif) no-repeat center; */
         /* background-size: cover; */
         background-color: black;
         border:none;
@@ -282,7 +282,7 @@
         transition:2s;  
     }
     #slide1 {
-        background:url(/images/new\ year.jpg) no-repeat center;
+        background:url(images/new\ year.jpg) no-repeat center;
         background-size: cover;
     }
     #slideinfo1 {
@@ -294,7 +294,7 @@
     }
 
     #slide2 {
-        background:url(/images/HEROF.jpg) no-repeat center;
+        background:url(images/HEROF.jpg) no-repeat center;
         background-size:cover;
     }
     /* #slideinfo2 {
@@ -304,7 +304,7 @@
         text-shadow: .1em .1em .1em black;
     } */
     #slide3 {
-        background:url(/images/BOBMLEY.jpg) no-repeat center;
+        background:url(images/BOBMLEY.jpg) no-repeat center;
         background-size: cover;
     }
     #slideinfo3 {
@@ -315,7 +315,7 @@
         background-color: rgba(73, 69, 69, .5);
     }
     #slide4 {
-        background:url(/images/4.jpg) no-repeat center;
+        background:url(images/4.jpg) no-repeat center;
         background-size: cover;
     }
     #slideinfo4 {

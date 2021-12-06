@@ -11,7 +11,7 @@
         color: blanchedalmond;
         overflow-x: hidden;
         background-image: linear-gradient(to bottom, rgb(31, 39, 32), rgb(27, 20, 20), rgb(45, 46, 2), black);
-        /* background: url('/images/promo1dec.jpg') fixed center no-repeat;
+        /* background: url('images/promo1dec.jpg') fixed center no-repeat;
         background-size: auto; */
         scroll-behavior: smooth;
         font-family: 'Josefin Sans', sans-serif;
@@ -79,7 +79,7 @@
         left: 0;
         padding: 0;
         margin: 0;
-        /* background:url(/images/LOGO\ BG.jfif) no-repeat center; */
+        /* background:url(images/LOGO\ BG.jfif) no-repeat center; */
         /* background-size: cover; */
         background-color: black;
         border:none;
@@ -265,7 +265,7 @@
         transition:2s;  
     }
     #slide1 {
-        background:url(/images/new\ year.jpg) no-repeat center;
+        background:url(images/new\ year.jpg) no-repeat center;
         background-size: cover;
     }
     #slideinfo1 {
@@ -277,7 +277,7 @@
     }
 
     #slide2 {
-        background:url(/images/HEROF.jpg) no-repeat center;
+        background:url(images/HEROF.jpg) no-repeat center;
         background-size:cover;
     }
     /* #slideinfo2 {
@@ -287,7 +287,7 @@
         text-shadow: .1em .1em .1em black;
     } */
     #slide3 {
-        background:url(/images/BOBMLEY.jpg) no-repeat center;
+        background:url(images/BOBMLEY.jpg) no-repeat center;
         background-size: cover;
     }
     #slideinfo3 {
@@ -298,7 +298,7 @@
         background-color: rgba(73, 69, 69, .5);
     }
     #slide4 {
-        background:url(/images/4.jpg) no-repeat center;
+        background:url(images/4.jpg) no-repeat center;
         background-size: cover;
     }
     #slideinfo4 {
@@ -845,7 +845,7 @@
         text-align: center;
         /* border:.1em solid white; */
         /* margin: 7vh 3% 7vh 3%; */
-        background: url(.../images/sativacard.jpg) center no-repeat ;
+        background: url(...images/sativacard.jpg) center no-repeat ;
         background-size: cover;
         padding: 13% 10% 0 10%;
         box-shadow: 2px 2px 2px black;
@@ -858,7 +858,7 @@
         text-align: center;
         /* border:.1em solid white; */
         /* margin: 7vh 3% 7vh 3%; */
-        background: url(/images/indicacard.jpg) no-repeat center;
+        background: url(images/indicacard.jpg) no-repeat center;
         background-size: cover;
         padding: 13% 10% 0 10%;
         box-shadow: 2px 2px 2px black;
@@ -869,7 +869,7 @@
         height: 36vh; */
         text-align: center;
         /* border:.1em solid white; */
-        background: url(/images/hybridcard.jpg) no-repeat center;
+        background: url(images/hybridcard.jpg) no-repeat center;
         background-size: cover;
         padding: 13% 10% 0 10%;
         box-shadow: 2px 2px 2px black;
@@ -983,47 +983,47 @@
     }
 
     #SA-AK {
-        background:url(/images/SOURDIESEL.jpg) center no-repeat;
+        background:url(images/SOURDIESEL.jpg) center no-repeat;
         background-size: cover;
     }
     
     #SA-BK {
-        background:url(/images/jackherer.jpg) center no-repeat;
+        background:url(images/jackherer.jpg) center no-repeat;
         background-size: cover;
     }
 
     #SA-BA {
-        background:url(/images/0003057-critical-cheese.jpg) center no-repeat;
+        background:url(images/0003057-critical-cheese.jpg) center no-repeat;
         background-size: cover;
     }
 
     #SA-GC {
-        background:url(/images/greencrack1.jpg) center no-repeat;
+        background:url(images/greencrack1.jpg) center no-repeat;
         background-size: cover;
     }
 
     #SA-DP {
-        background:url(/images/durbanpoison.jpg) center no-repeat;
+        background:url(images/durbanpoison.jpg) center no-repeat;
         background-size: cover;
     }
     
     #SA-SSH {
-        background:url(/images/supersilverhaze.jpg) center no-repeat;
+        background:url(images/supersilverhaze.jpg) center no-repeat;
         background-size: cover;
     }
 
     #SA-TN {
-        background:url(/images/tangiie.jpg) center no-repeat;
+        background:url(images/tangiie.jpg) center no-repeat;
         background-size: cover;
     }
 
     #SA-BL {
-        background:url(/images/bluedream.jpg) center no-repeat;
+        background:url(images/bluedream.jpg) center no-repeat;
         background-size: cover;
     }
 
     #SA-TW {
-        background:url(/images/trainwreck1.jpg) center no-repeat;
+        background:url(images/trainwreck1.jpg) center no-repeat;
         background-size: cover;
     }
     
@@ -1036,19 +1036,19 @@
 
 
     .bg10g{
-        background:url(/images/10gf.jpg) center no-repeat;
+        background:url(images/10gf.jpg) center no-repeat;
         background-size: cover;
         transition:  .5s;
     }
 
     .bg100g{
-        background:url(/images/100gf.jpg) center no-repeat;
+        background:url(images/100gf.jpg) center no-repeat;
         background-size: cover;
         transition:  .5s;
     }
 
     .bg1k{
-        background:url(/images/1kkkg.jpg) center no-repeat;
+        background:url(images/1kkkg.jpg) center no-repeat;
         background-size: cover;
         transition:  .5s ;
     }
@@ -1076,59 +1076,59 @@
         visibility: hidden;
     }
 
-    #IN-HQ {background:url(/images/Harleyquin.jpg) center no-repeat;
+    #IN-HQ {background:url(images/Harleyquin.jpg) center no-repeat;
         background-size: cover;}
 
-    #IN-SC {background:url(/images/StrawberryCough.jpg) center no-repeat;
+    #IN-SC {background:url(images/StrawberryCough.jpg) center no-repeat;
         background-size: cover;}
 
-    #IN-AK {background:url(/images/AFGAN\ KUSH.png) center no-repeat;
+    #IN-AK {background:url(images/AFGAN\ KUSH.png) center no-repeat;
         background-size: cover;}
 
-    #IN-BK {background:url(/images/blackberrykush.jpg) center no-repeat;
+    #IN-BK {background:url(images/blackberrykush.jpg) center no-repeat;
         background-size: cover;}
 
-    #IN-BA {background:url(/images/bubbakush.jpg) center no-repeat;
+    #IN-BA {background:url(images/bubbakush.jpg) center no-repeat;
         background-size: cover;}
 
-    #IN-GF {background:url(/images/Godfather-OG-Seeds.gif) center no-repeat;
+    #IN-GF {background:url(images/Godfather-OG-Seeds.gif) center no-repeat;
         background-size: cover;}
 
-    #IN-ER {background:url(/images/ElevenRoses-06.png) center no-repeat;
+    #IN-ER {background:url(images/ElevenRoses-06.png) center no-repeat;
         background-size: cover;}
 
-    #IN-SW {background:url(/images/skywalker\ OG.jpg) center no-repeat;
+    #IN-SW {background:url(images/skywalker\ OG.jpg) center no-repeat;
         background-size: cover;}
 
-    #IN-NL {background:url(/images/NORTHENLIGHT.jpg) center no-repeat;
+    #IN-NL {background:url(images/NORTHENLIGHT.jpg) center no-repeat;
         background-size: cover;}
 
     
-    #HY-AK  {background:url(/images/AK47.jpg) center no-repeat;
+    #HY-AK  {background:url(images/AK47.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-CD  {background:url(/images/chemdawg2.jpg) center no-repeat;
+    #HY-CD  {background:url(images/chemdawg2.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-LC  {background:url(/images/LACONFIDENTIAL.jpg) center no-repeat;
+    #HY-LC  {background:url(images/LACONFIDENTIAL.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-SP  {background:url(/images/sourspacecandy.jpg) center no-repeat;
+    #HY-SP  {background:url(images/sourspacecandy.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-BW  {background:url(/images/blissfulwizzard.jpg) center no-repeat;
+    #HY-BW  {background:url(images/blissfulwizzard.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-BB  {background:url(/images/BRUCEBANNER.jpg) center no-repeat;
+    #HY-BB  {background:url(images/BRUCEBANNER.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-GS  {background:url(/images/Girlscoutcookie.jpg) center no-repeat;
+    #HY-GS  {background:url(images/Girlscoutcookie.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-KT  {background:url(/images/kingtut.jpg) center no-repeat;
+    #HY-KT  {background:url(images/kingtut.jpg) center no-repeat;
         background-size: cover;}
 
-    #HY-GG  {background:url(/images/gorilla-glue-feminized.jpg) center no-repeat;
+    #HY-GG  {background:url(images/gorilla-glue-feminized.jpg) center no-repeat;
         background-size: cover;}
 
     input[id*= 'amountFO'] {
