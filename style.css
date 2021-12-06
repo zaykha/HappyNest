@@ -845,7 +845,7 @@
         text-align: center;
         /* border:.1em solid white; */
         /* margin: 7vh 3% 7vh 3%; */
-        background: url(/images/sativacard.jpg) center no-repeat ;
+        background: url(.../images/sativacard.jpg) center no-repeat ;
         background-size: cover;
         padding: 13% 10% 0 10%;
         box-shadow: 2px 2px 2px black;

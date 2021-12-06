@@ -268,7 +268,7 @@
         transition:2s;  
     }
     #slide1 {
-        background:url(./images/new\ year.jpg) no-repeat center;
+        background:url(.../images/new\ year.jpg) no-repeat center;
         background-size: cover;
     }
     #slideinfo1 {
